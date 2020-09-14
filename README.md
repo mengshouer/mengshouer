@@ -1,4 +1,4 @@
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=mengshouer)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=mengshouer&count_private=true&show_icons=true&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
 
 
 [![](https://chat.getloli.com/room/@mengshouer.github/svg?width=600&height=100&limit=20&theme=light&title=mengshouer@github:%20~&fontSize=13)](https://chat.getloli.com/room/@mengshouer.github?title=mengshouer的留言板)
