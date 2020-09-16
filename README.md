@@ -1,4 +1,4 @@
-<div align="center"><img src="https://count.getloli.com/get/@mengshouer?theme=moebooru" align="center" /></div>
+<div align="center"><img src="https://count.getloli.com/get/@mengshouer?theme=rule34" align="center" /></div>
 <!--
 <div align="center"><img src="https://komarev.com/ghpvc/?username=mengshouer&style=flat-square" align="center" /></div>
 -->
