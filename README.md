@@ -15,16 +15,21 @@
 </a>
 </div>
 
-#### Platform & Tools
+<div align="center">
 
-[![](https://img.shields.io/badge/OS-Ubuntu-E95420?style=flat-square&logo=Ubuntu)](https://ubuntu.com/)
-[![](https://img.shields.io/badge/Windows-10-blue?style=flat-square&logo=windows)](https://www.microsoft.com/en-us/software-download/windows10)
+Platform & Tools
+
+[![](https://img.shields.io/badge/MySQL(Dev)-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://dev.mysql.com/downloads/)
+[![](https://img.shields.io/badge/MarkdownEditor-000000?style=flat-square&logo=markdown)](https://mengshouer.github.io/markdown-editor/)
+[![](https://img.shields.io/badge/OpenJDK-orange?style=flat&logo=java)](https://adoptopenjdk.net/releases.html)
 
 [![](https://img.shields.io/badge/IDE-Visual%20Studio%20Code-blue?style=flat-square&logo=visual-studio-code)](https://code.visualstudio.com/)
 [![](https://img.shields.io/badge/BuildTools-C++-00599C?style=flat-square&logo=C%2B%2B)](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 
-[![](https://img.shields.io/badge/MySQL(Dev)-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://dev.mysql.com/downloads/)
-[![](https://img.shields.io/badge/OpenJDK-orange?style=flat&logo=java)](https://adoptopenjdk.net/releases.html)
+[![](https://img.shields.io/badge/OS-Ubuntu-E95420?style=flat-square&logo=Ubuntu)](https://ubuntu.com/)
+[![](https://img.shields.io/badge/Windows-10-blue?style=flat-square&logo=windows)](https://www.microsoft.com/en-us/software-download/windows10)
+
+</div>
 
 
 <!--
