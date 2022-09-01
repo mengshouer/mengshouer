@@ -20,8 +20,8 @@
 Platform & Tools
 
 [![](https://img.shields.io/badge/MySQL(Dev)-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://dev.mysql.com/downloads/)
-[![](https://img.shields.io/badge/MarkdownEditor01-000000?style=flat-square&logo=markdown)](https://mengshouer.gitee.io/markdown-editor/)
-[![](https://img.shields.io/badge/MarkdownEditor02-000000?style=flat-square&logo=markdown)](https://mengshouer.github.io/markdown-editor/)
+[![](https://img.shields.io/badge/MarkdownEditor01-000000?style=flat-square&logo=markdown)](https://xuehu.netlify.app/)
+[![](https://img.shields.io/badge/MarkdownEditor02-000000?style=flat-square&logo=markdown)](https://mengshouer.bitbucket.io/)
 [![](https://img.shields.io/badge/OpenJDK-orange?style=flat&logo=java)](https://adoptopenjdk.net/releases.html)
 
 [![](https://img.shields.io/badge/IDE-Visual%20Studio%20Code-blue?style=flat-square&logo=visual-studio-code)](https://code.visualstudio.com/)
