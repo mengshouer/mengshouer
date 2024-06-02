@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-<img src="https://api.githubtrends.io/user/svg/mengshouer/langs?time_range=one_year&loc_metric=changed&compact=True&theme=dark" />
+<img src="https://api.githubtrends.io/user/svg/mengshouer/langs?time_range=one_year&compact=True&theme=dark" />
 </div>
 
 <div align="center" style="margin-bottom: 10px;">
