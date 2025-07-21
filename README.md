@@ -6,12 +6,6 @@
 <img src="https://api.githubtrends.io/user/svg/mengshouer/langs?time_range=one_year&compact=True&theme=dark" />
 </div>
 
-<div align="center" style="margin-bottom: 10px;">
-<img src="https://profile-counter.glitch.me/mengshouer/count.svg" align="center" />
-</div>
-
-<div align="center">
-
-[![](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://mengshouer.netlify.app/)
-
+<div align="center" style="margin-top: 10px;">
+Ask me anything  <a href="https://t.me/snowfox_feedbackbot"><b>here</b></a>
 </div>
