@@ -1,0 +1,70 @@
+name: Metrics
+
+on:
+  schedule: [{ cron: "0 0 * * *" }]
+  workflow_dispatch:
+  push: { branches: ["master", "main"] }
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Profile overview and repo languages
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: github-metrics.svg
+          output_action: none
+          template: classic
+          config_timezone: Asia/Shanghai
+          base: header, activity, community, repositories
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 1%
+
+      - name: Calendar and indepth languages
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics-langs.svg
+          output_action: none
+          template: classic
+          config_timezone: Asia/Shanghai
+          base: metadata
+          config_order: isocalendar, languages
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_details: lines, percentage
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 1%
+          plugin_languages_analysis_timeout: 15
+          commits_authoring: mengshouer, mengshouer@outlook.com
+
+      - name: Push single commit to output branch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/metrics-output
+          cp /metrics_renders/*.svg /tmp/metrics-output/
+          cd /tmp/metrics-output
+          git init -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add *.svg
+          git commit -m "chore: update metrics [Skip GitHub Action]"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
+
+      - name: Clean up old workflow runs
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/actions/runs?status=completed&per_page=100" \
+            --jq '.workflow_runs[].id' \
+            | xargs -r -n1 -I{} gh api -X DELETE "repos/${GITHUB_REPOSITORY}/actions/runs/{}"
